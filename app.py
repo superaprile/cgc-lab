@@ -52,7 +52,7 @@ def index():
 
 @app.route('/watermark', methods=['POST'])
 def apply_watermark():
-    bucket_name = "heroku1-bucket"
+    bucket_name = "cgc-bucket"
 
     filename = request.form['filename']
     path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
